@@ -1,0 +1,242 @@
+.navSeparator {
+    width: 80%;
+    height: 1px;
+    background-color: #424242;
+    margin: 5px auto 5px;
+}
+
+.navButton {
+    display: flex;
+    font-weight: 700;
+    background-color: #494949;
+    border: none;
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 4px;
+    width: 180px;
+}
+
+
+.logout {
+    display: flex;
+    color: #EB5757;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: transparent;
+    font-weight: 700;
+    width: 180px;
+
+}
+
+.logout:hover {
+    background: rgba(179, 61, 61, 0.15);
+}
+
+.logout:active {
+    background-color: #EB5757;
+    color: #FFFFFF;
+}
+
+
+.handler {
+    max-width: 800px;
+    min-width: 400px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+.userContainer {
+    position: relative;
+    padding: 25px;
+    background-color: #343434;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 36px;
+}
+
+
+.userInfo {
+    width: 100%;
+}
+
+.userInfoText {
+    font-size: 13px;
+    position: relative;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.userInfoTitle {
+    margin-top: 15px;
+    color: #828282;
+    font-weight: 900;
+    font-size: 13px;
+}
+
+.userInfoHandler {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.edit {
+    cursor: pointer;
+    height: min-content;
+    background-color: #738ADB;
+    color: #FFFFFF;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 20px;
+}
+
+.titleExit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.end {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.exitButton {
+    border-radius: 50%;
+    border: 2px #FFFFFF solid;
+    width: 32px;
+    height: 32px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.exitButton:hover {
+    background-color: #828282;
+}
+
+.inputHandler {
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 3px;
+    background-color: #282828;
+}
+
+.input {
+    border: none;
+    background-color: transparent;
+
+    color: white !important;
+    width: 100%;
+}
+
+.updateButton {
+    color: #FFFFFF;
+    border-radius: 3px;
+    border: none;
+    background-color: #738ADB;
+    padding: 5px 25px;
+    cursor: pointer;
+}
+
+.cancelButton {
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.cancelButton:hover p {
+    border-bottom: 1px wheat solid;
+}
+
+.cancelButton p {
+    line-height: 10px;
+    border-bottom: 1px transparent solid;
+}
+
+
+.changePassword {
+    transition: color, border .1s linear;
+    background-color: transparent;
+    padding: 5px 25px;
+    border-radius: 3px;
+    color: #EB5757;
+    border: #EB5757 1px solid;
+    cursor: pointer;
+}
+.errorText {
+    color: #EB5757;
+}
+
+.errorBorder {
+    border: #EB5757 1px solid !important;
+}
+
+.imageInput {
+    display: none;
+}
+
+.changeAvatar {
+    transition: opacity .2s;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    top: 0;
+    height: 128px;
+    width: 128px;
+    color: #FFFFFF;
+    background-color: rgba(34, 34, 34, 0.5);
+    line-height: 0;
+    font-weight: 900;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.imageInput:hover ~ .changeAvatar {
+    opacity: 1;
+    visibility: visible;
+}
+
+.deleteProfilePicture{
+    color: #738ADB;
+    font-size: 12px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.deleteProfilePicture:hover{
+    text-decoration: underline #738ADB;
+}
+
+.canReceiveDM{
+    transition: color, border .1s linear;
+    background-color: transparent;
+    padding: 5px 25px;
+    border-radius: 3px;
+    color: #27AE60;
+    border: #27AE60 1px solid;
+    cursor: pointer;
+}

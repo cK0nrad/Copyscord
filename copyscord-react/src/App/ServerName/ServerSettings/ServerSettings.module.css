@@ -1,0 +1,18 @@
+.navButton {
+    display: flex;
+    font-weight: 700;
+    border: none;
+    color: #FFFFFF;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 4px;
+    width: 180px;
+    margin-bottom: 4px;
+}
+.navButton:hover {
+    background-color: #404040;
+}
+.activeNav {
+    background-color: #494949 !important;
+
+}

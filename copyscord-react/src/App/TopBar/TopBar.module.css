@@ -1,0 +1,41 @@
+.topBar {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    background-color: #222222;
+    justify-content: space-between;
+}
+
+.appName {
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 900;
+    color: #828282;
+}
+
+.controlMenu {
+    display: inline-flex;
+    align-items: center;
+}
+
+.menuButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 25px;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 200;
+    color: #FFFFFF;
+}
+.menuButton:hover {
+
+}
+.reduce:hover, .enlarge:hover {
+    background-color: #343434;
+}
+
+.exit:hover {
+    background-color: #c0392b !important;
+}

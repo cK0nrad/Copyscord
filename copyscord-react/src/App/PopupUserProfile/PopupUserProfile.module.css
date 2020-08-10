@@ -1,0 +1,104 @@
+.popup{
+    display: flex;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.handler{
+    max-width: 600px;
+    min-width: 400px;
+    width: 100%;
+    margin: 0 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    width: 100%;
+    background-color: #303030;
+    border-radius: 5px 5px 0 0;
+}
+.topContent{
+    width: 100%;
+    display: flex;
+    margin: 15px;
+    justify-content: space-between;
+}
+.space{
+    display: flex;
+    align-items: center;
+}
+.userNameCode{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.username{
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 20px;
+}
+.userCode{
+    font-size: 20px;
+    color: #999999;
+}
+
+.navBar{
+    border-top: #404040 2px solid;
+    background-color: #303030;
+}
+.navBarContent{
+    display: flex;
+    margin-left: 10px;
+    height: 50px;
+}
+.navButton{
+    font-size: 14px;
+    cursor: pointer;
+    color: #9e9e9e;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+}
+.navButton:hover{
+    color: #c2c2c2;
+    border-bottom: #c2c2c2 3px solid;
+}
+.navActive{
+    color: #FFFFFF !important;
+    border-bottom: #FFFFFF 3px solid !important;
+}
+
+
+.bot{
+    background-color: #404040;
+    border-radius: 0 0 5px 5px;
+}
+.botContent{
+    padding: 10px;
+}
+.addFriend{
+    background-color: #27AE60;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+.addedFriend{
+    background-color: #27804d;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 20px;
+    cursor: pointer;
+}

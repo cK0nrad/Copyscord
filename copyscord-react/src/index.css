@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap');
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+p, a, textarea, button, td, th, div {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.selectRemover {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.selectEnabler {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text;
+}
+
+* {
+    outline: none !important;
+}

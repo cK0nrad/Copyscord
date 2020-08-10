@@ -1,0 +1,51 @@
+.addFriend{
+    display: flex;
+    width: 100%;
+}
+.input{
+    flex: 1;
+
+    background: #282828;
+    color: white;
+    border: 0.5px solid #000000;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.button{
+    background-color: #27AE60;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.alert {
+    padding: 5px;
+    height: auto;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.success{
+    padding: 5px;
+    height: auto;
+    background-color: #27AE60;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.closebtn:hover {
+    color: black;
+}
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}

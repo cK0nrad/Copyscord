@@ -1,0 +1,205 @@
+.cancelButton {
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.cancelButton:hover p {
+    border-bottom: 1px wheat solid;
+}
+
+.cancelButton p {
+    line-height: 10px;
+    border-bottom: 1px transparent solid;
+}
+
+.createButton {
+    background-color: #738ADB;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.content {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleHandler {
+    text-transform: uppercase;
+    line-height: 0;
+    position: relative;
+}
+
+.categoryName {
+    position: relative;
+    color: #999999;
+    font-size: 12px;
+    line-height: 12px;
+    white-space: nowrap;
+    width:250px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.title {
+    margin: 8px 0;
+    color: #FFFFFF;
+    font-weight: 900;
+}
+
+
+.subTitle {
+    position: relative;
+    color: #999999;
+    font-size: 12px;
+}
+
+.form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.channelType {
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    width: 100%;
+    border: #282828 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.channelTypeFa {
+    margin: 0 10px;
+}
+
+.activeType {
+    background-color: #738ADB;
+    border: #738ADB 1px solid;
+}
+
+.checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    clear: both;
+    margin-left: 10px;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox .checkboxSpan {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+}
+
+.checkbox input:checked ~ .checkboxSpan {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.checkbox .checkboxSpan::after {
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 12px;
+    height: 0;
+    width: 0;
+    border-radius: 5px;
+    border-width: 0 3px 3px 0;
+    opacity: 1;
+}
+
+.checkbox input:checked ~ .checkboxSpan::after {
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    opacity: 1;
+    left: 8px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid #738ADB;
+    border-width: 0 2px 2px 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+.inputText{
+    display: flex;
+    flex-direction: column;
+}
+.channelName {
+    background-color: #303030;
+    color: #FFFFFF;
+    border: #282828 1px solid;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.error{
+    line-height: 0;
+    font-weight: 200;
+    font-size: 12px;
+    color: #EB5757;
+}
+.borderError{
+    border: #EB5757 1px solid !important;
+}
+.channelName:focus {
+    border: #738ADB 1px solid ;
+}
+
+
+.deleteButton{
+    padding: 0 25px;
+    background-color: #DC4334;
+    border: none;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.cancelButton{
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.cancelButton:hover p {
+    border-bottom: 1px wheat solid;
+}
+
+.cancelButton p {
+    line-height: 10px;
+    border-bottom: 1px transparent solid;
+}

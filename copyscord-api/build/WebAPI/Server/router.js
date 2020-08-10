@@ -1,0 +1,64 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const postServer_1 = require("./Controller/POST/postServer");
+const postServerJoin_1 = require("./Controller/POST/postServerJoin");
+const postServerIDCategory_1 = require("./Controller/POST/postServerIDCategory");
+const postServerIDCategoryIDChannels_1 = require("./Controller/POST/postServerIDCategoryIDChannels");
+const postServerIDBandsUserID_1 = require("./Controller/POST/postServerIDBandsUserID");
+const postServerIDInvites_1 = require("./Controller/POST/postServerIDInvites");
+const putServerID_1 = require("./Controller/PUT/putServerID");
+const putServerIDLogo_1 = require("./Controller/PUT/putServerIDLogo");
+const putServerIDCategoryID_1 = require("./Controller/PUT/putServerIDCategoryID");
+const putServerIDMembersUserID_1 = require("./Controller/PUT/putServerIDMembersUserID");
+const getServer_1 = require("./Controller/GET/getServer");
+const getServerID_1 = require("./Controller/GET/getServerID");
+const getServerIDChannels_1 = require("./Controller/GET/getServerIDChannels");
+const getServerIDCategory_1 = require("./Controller/GET/getServerIDCategory");
+const getServerIDCategoryIDChannels_1 = require("./Controller/GET/getServerIDCategoryIDChannels");
+const getServerIDMembers_1 = require("./Controller/GET/getServerIDMembers");
+const getServerIDMembersUserID_1 = require("./Controller/GET/getServerIDMembersUserID");
+const getServerIDBans_1 = require("./Controller/GET/getServerIDBans");
+const getServerIDInvites_1 = require("./Controller/GET/getServerIDInvites");
+const getServerIDInvitesAll_1 = require("./Controller/GET/getServerIDInvitesAll");
+const getServerVoice_1 = require("./Controller/GET/getServerVoice");
+const deleteServerID_1 = require("./Controller/DELETE/deleteServerID");
+const deleteServerIDLogo_1 = require("./Controller/DELETE/deleteServerIDLogo");
+const deleteServerIDLeave_1 = require("./Controller/DELETE/deleteServerIDLeave");
+const deleteServerIDInvites_1 = require("./Controller/DELETE/deleteServerIDInvites");
+const deleteServerIDBansUserID_1 = require("./Controller/DELETE/deleteServerIDBansUserID");
+const deleteServerIDCategoryID_1 = require("./Controller/DELETE/deleteServerIDCategoryID");
+const multer = require("multer");
+const router = (app) => {
+    //POST
+    app.post("/server", postServer_1.default);
+    app.post("/server/join", postServerJoin_1.default);
+    app.post("/server/:id/category", postServerIDCategory_1.default);
+    app.post("/server/:id/:categoryId/channels", postServerIDCategoryIDChannels_1.default);
+    app.post("/server/:id/bans/:userId", postServerIDBandsUserID_1.default);
+    app.post("/server/:id/invites", postServerIDInvites_1.default);
+    //PUT
+    app.put("/server/:id", putServerID_1.default);
+    app.put("/server/:id/logo", multer().single("logo"), putServerIDLogo_1.default);
+    app.put("/server/:id/:categoryId", putServerIDCategoryID_1.default);
+    app.put("/server/:id/members/:userId", putServerIDMembersUserID_1.default);
+    //GET
+    app.get("/server", getServer_1.default);
+    app.get("/server/:id", getServerID_1.default);
+    app.get("/server/:id/channels", getServerIDChannels_1.default);
+    app.get("/server/:id/category", getServerIDCategory_1.default);
+    app.get("/server/:id/bans", getServerIDBans_1.default);
+    app.get("/server/:id/voice", getServerVoice_1.default);
+    app.get("/server/:id/invites", getServerIDInvites_1.default);
+    app.get("/server/:id/invites/all", getServerIDInvitesAll_1.default);
+    app.get("/server/:id/members", getServerIDMembers_1.default);
+    app.get("/server/:id/members/:userId", getServerIDMembersUserID_1.default);
+    app.get("/server/:id/:categoryId/channels", getServerIDCategoryIDChannels_1.default);
+    //DELETE
+    app.delete("/server/:id", deleteServerID_1.default);
+    app.delete("/server/:id/logo", deleteServerIDLogo_1.default);
+    app.delete("/server/:id/leave", deleteServerIDLeave_1.default);
+    app.delete("/server/:id/invites", deleteServerIDInvites_1.default);
+    app.delete("/server/:id/bans/:userId", deleteServerIDBansUserID_1.default);
+    app.delete("/server/:id/:categoryId", deleteServerIDCategoryID_1.default);
+};
+exports.default = router;

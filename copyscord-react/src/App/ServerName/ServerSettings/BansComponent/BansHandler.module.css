@@ -1,0 +1,48 @@
+.handler{
+    position: relative;
+    border: 1px #393939 solid;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.handler p{
+    margin-left: 5px;
+    color: #FFFFFF;
+}
+
+.handler:hover, .handler:hover .removeBan{
+    border: 1px black solid;
+    background-color: #343434;
+    visibility: visible;
+
+}
+
+.banned, .author {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.removeBan{
+    visibility: hidden;
+    position: absolute;
+    top:-16px;
+    right: -16px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px transparent solid;
+    color: #EB5757;
+
+}
+.removeBan:hover{
+    background-color: #494949 !important;
+}

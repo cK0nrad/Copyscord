@@ -1,0 +1,46 @@
+.handler {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    overflow: auto;
+}
+
+.listUser {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    color: #FFFFFF;
+    margin: 0 10px;
+    cursor: pointer;
+
+}
+
+.name {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.userCode {
+    color: #999999;
+    font-size: 15px;
+}
+
+.listUser:hover {
+    background-color: #505050;
+}
+
+.serverLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+    background-color: #738ADB;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: border-radius .1s;
+    color: #FFFFFF;
+}

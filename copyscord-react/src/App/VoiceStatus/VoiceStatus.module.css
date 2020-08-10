@@ -1,0 +1,35 @@
+.handler {
+    width: 240px;
+    height: 50px;
+    background: #222222;
+    border-bottom: 1px #343434 solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.connected, .connecting{
+    font-size: 15px;
+    font-weight: 900;
+}
+.connected{
+    color: #27AE60;
+}
+.connecting {
+    color: #F2994A;
+}
+.disconnect{
+    color: #FFFFFF;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.disconnect:hover{
+    background: #343434;
+}
+.channelName{
+    color: #999999;
+    font-size: 12px;
+}

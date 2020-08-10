@@ -1,0 +1,14 @@
+.handler{
+    height:auto;
+    position: relative;
+    display: flex;
+}
+.status {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    border: 2px solid;
+}

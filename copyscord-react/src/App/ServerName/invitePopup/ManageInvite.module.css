@@ -1,0 +1,39 @@
+.handler{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    overflow: auto;
+    width: 400px;
+}
+.invite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    flex: 1;
+    padding: 15px;
+    border: #616161 1px solid;
+    border-radius: 5px;
+    margin: 2px 10px;
+}
+.invite:hover{
+    background-color: #282828;
+    border: #000000 1px solid;
+
+}
+.delete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: #FFFFFF 1px solid;
+    width: 24px;
+    height: 24px;
+    color: #EB5757;
+    cursor: pointer;
+}
+.delete:hover{
+    border: #EB5757 1px solid;
+    background-color: #282828;
+}

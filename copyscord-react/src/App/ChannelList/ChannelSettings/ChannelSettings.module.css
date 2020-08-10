@@ -1,0 +1,11 @@
+.navButton {
+    display: flex;
+    font-weight: 700;
+    border: none;
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 4px;
+    width: 180px;
+    margin-bottom: 4px;
+    background-color: #494949;
+}

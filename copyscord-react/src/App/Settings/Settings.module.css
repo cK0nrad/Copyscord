@@ -1,0 +1,39 @@
+.settings{
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: #4A4A4A;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 20px);
+    padding-bottom: 20px;
+}
+
+.navBar{
+    position: relative;
+    height: 100%;
+    flex: 1;
+    min-width: 260px;
+    background-color: #343434;
+}
+.buttonList{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px 10px 60px;
+}
+.content{
+    display: flex;
+    flex: 2;
+    background-color: #4A4A4A;
+    width: 100%;
+    margin: 60px;
+}
+.title{
+    color: #8B8B8B;
+    font-size: 12px;
+    font-weight: 900;
+}
+

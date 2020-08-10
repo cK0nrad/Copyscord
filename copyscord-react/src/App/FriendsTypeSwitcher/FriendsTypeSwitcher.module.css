@@ -1,0 +1,32 @@
+.switch {
+    display: flex;
+}
+
+.switcher {
+    margin-right: 10px;
+    height: auto;
+    font-weight: 400;
+    color: #999999;
+}
+
+.switcherText {
+    padding: 4px 8px 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.switcher:hover .switcherText {
+    background-color: #3F3F3F;
+    color: #FFFFFF;
+}
+
+.active {
+    color: #FFFFFF !important;
+    background-color: #353535 !important;
+}
+
+
+.addFriendButton {
+    background-color: #27AE60 !important;
+    color: #FFFFFF !important;
+}

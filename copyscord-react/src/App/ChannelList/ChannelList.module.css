@@ -1,0 +1,40 @@
+.handler {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #343434;
+    bottom: 0;
+}
+.handlerBR {
+    border-radius: 7px 0 0 0;
+}
+.top{
+    height:48px;
+}
+
+.channelList{
+    display:flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100%;
+
+}
+.channelList::-webkit-scrollbar {
+    display: none;
+}
+.UserContainer {
+    position: absolute;
+    display: flex;
+    height: 48px;
+    width: 100%;
+    bottom: 0;
+}
+
+.dmSeparator{
+    color: #999999;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 10px;
+}

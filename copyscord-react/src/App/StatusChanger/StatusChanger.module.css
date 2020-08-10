@@ -1,0 +1,32 @@
+.handler{
+    position: absolute;
+    width: 210px;
+    background-color: #1E1E1E;
+    bottom: 60px;
+    left: 10px;
+    border-radius: 3px;
+    padding: 0 5px;
+
+}
+.select{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    line-height: 0;
+    color: #FFFFFF;
+    border-radius: 3px;
+    margin: 5px 0;
+}
+
+.select div, .select p{
+    margin-left: 5px;
+}
+
+.select:hover{
+    background-color: #373737;
+}
+
+.active {
+    background-color: #373737 !important;
+}

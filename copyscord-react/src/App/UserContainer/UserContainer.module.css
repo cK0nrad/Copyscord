@@ -1,0 +1,69 @@
+.handler {
+    display: flex;
+    background-color: #222222;
+    width: 240px;
+    height: 48px;
+}
+
+.username {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 16px;
+    max-width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.userLogo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.usercode {
+    color: #747474;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+}
+
+.userInfo {
+    display: block;
+
+}
+
+.infoWrapper {
+
+    display: inline-flex;
+    align-items: center;
+    height: 48px;
+    width: 100px;
+    margin-left: 5px;
+}
+
+.controller {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controlButton {
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0;
+    height: 32px;
+    width: 32px;
+    border: none;
+}
+
+.controlButton:hover {
+    background-color: #3F3F3F !important;
+}
+

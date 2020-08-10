@@ -1,0 +1,166 @@
+.handler {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: #4A4A4A;
+}
+
+.top {
+    height: 48px;
+}
+
+.verticalSeparator {
+    margin: 10px;
+    height: 20px;
+    width: 1px;
+    background-color: #585858;
+}
+
+.list {
+    padding: 0 30px;
+}
+
+.title {
+    display: flex;
+    color: #B1B1B1;
+    font-weight: 900;
+    font-size: 13px;
+    height: 42px;
+}
+.subTitle {
+    display: flex;
+    color: #B1B1B1;
+    font-weight: 900;
+    font-size: 13px;
+    height: auto;
+}
+.user {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 54px;
+    border-radius: 5px;
+    margin-bottom: -1px;
+}
+
+.user:hover {
+    background-color: #585858;
+}
+.user:hover .action {
+    background-color: #1F1F1F;
+    color: #CCCCCC;
+}
+.user:after {
+    content: "";
+    background: #585858;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    margin-left: 5px;
+    width: calc(100% - 10px);
+}
+
+.userLogo {
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+
+.username {
+    margin-left: 10px;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 18px;
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+}
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    color: #999999;
+    background-color: #2E2E2E;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.action:hover{
+    color: #ffffff !important;
+}
+
+.userCode{
+    visibility: hidden;
+    color: #999999;
+    font-size: 18px;
+}
+
+.user:hover .userCode{
+    visibility: visible;
+
+}
+.contextMenu{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    background-color: #1E1E1E;
+    padding: 5px;
+}
+.contextButton{
+    border: none;
+    background: transparent;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 5px;
+}
+.delete{
+    color: #EB5757;
+}
+.delete:hover {
+    background: #EB5757 !important;;
+    color: #FFFFFF;
+}
+
+.cancelButton{
+    border: none;
+    margin-right: 10px;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.cancelButton:hover p {
+    border-bottom: 1px wheat solid;
+}
+
+.cancelButton p {
+    line-height: 10px;
+    border-bottom: 1px transparent solid;
+}
+.deleteButton{
+    padding: 0 25px;
+    background-color: #DC4334;
+    border: none;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
