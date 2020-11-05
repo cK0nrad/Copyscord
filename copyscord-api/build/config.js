@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const config = {
     serverID: 0,
-    publicIp: "192.168.0.111",
+    publicIp: "127.0.0.1",
     CORSPort: 8081,
     voiceSocketPort: 6594,
     eventSocketPort: 8008,
