@@ -5,6 +5,8 @@ It's just a simple Discord clone with a REST API, socket event and voice connect
 
 It's my first time with ReactJS so it's not really optimized but it do work :smile:
 
+FYI: I'm about to rewrite most of the react app to avoid spaghetti code
+
 ### Require
 
 SocketIO
