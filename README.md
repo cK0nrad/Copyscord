@@ -21,3 +21,4 @@ Redis
 3. Add your voice server into the "voiceNode" collection (see copyscord-doc/Database scheme)
 4. Build the project 
     > $: tsc && node build/index.js
+(5. You need to validate certificate for each servers in your browser otherwise it'll not work. i.e: go to 127.0.0.1:(8080, 6594, 8081) and allow certificates.)
